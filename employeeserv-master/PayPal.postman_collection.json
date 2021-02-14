@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "20c56aab-bd39-428e-a3e8-2c9d05cdea8f",
+		"name": "PayPal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"first_name\": \"Moaa\",\r\n    \"last_name\": \"Mano\",\r\n    \"date_of_birth\": \"1991-12-31\",\r\n    \"address\": {\r\n        \"line1\": \"dsfsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfs\",\r\n        \"line2\": \"dsfsdfsd\",\r\n        \"city\": \"dsfsdfsd\",\r\n        \"state\": \"dsfsdfsd\",\r\n        \"country\": \"dsfsdfsd\",\r\n        \"zip_code\": \"641659\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/bfs/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"bfs",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/bfs/employees/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"bfs",
+						"employees",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/bfs/employees/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"bfs",
+						"employees",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"first_name\": \"Moaa\",\r\n    \"last_name\": \"Mano\",\r\n    \"date_of_birth\": \"1991-12-31\",\r\n    \"address\": {\r\n        \"line1\": \"dsfsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfs\",\r\n        \"line2\": \"dsfsdfsd\",\r\n        \"city\": \"dsfsdfsd\",\r\n        \"state\": \"dsfsdfsd\",\r\n        \"country\": \"dsfsdfsd\",\r\n        \"zip_code\": \"641659\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/bfs/employees/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"bfs",
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Mano1\",\r\n    \"last_name\": \"Mano1\",\r\n    \"date_of_birth\": \"1995-12-31\",\r\n    \"address\": {\r\n        \"line1\": \"abcd\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/bfs/employees/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"bfs",
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
